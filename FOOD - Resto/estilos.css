@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #09101d;
+    color: #fff;
+}
+
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2rem;}
+h3 { font-size: 1.75rem;}
+h4 { font-size: 1.5rem;}
+h5 {font-size: 1.25;}
+h6 {font-size: 1rem;}
+
+p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1em;
+    color: #ccc;
+}
+
+a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    margin: 0;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 50px;
+    
+}
+
+.display-1{ font-size: 4rem;}
+.display-2{ font-size: 1rem;}
+.display-3{ 
+font-size: 2.2rem;
+text-align: center;
+font-weight: 300;}
+
+
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    /* letter-spacing: 1px; */
+    border-radius: 30px;
+}
+
+.btn-small{
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+.btn-dark{
+    border:2px solid rgba(255, 255, 255, 0.4);
+    /* background:#fff; */
+    color: rgb(255, 255, 255);
+}
+
+.btn-dark:hover{
+    border:2px solid #fff;
+    
+}
+
+.btn-light{
+    background: #fff;
+    color: #000;
+}
+
+.btn-light:hover{
+    background:#5a5a5a;
+    color: #fff;
+}
+
+.large{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+/* navbar */
+
+#navbar{
+    background: #ffffff;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 11vh;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+#navbar a{
+    color: #000;
+    justify-content: center;
+}
+
+#navbar a:hover{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px 50px ;
+    /* margin: 0 5px 0 5px; */
+
+}
+
+#navbar .logo{
+    float: left;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+    font-weight: 500;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding:15px;
+    text-align: center;
+}
+
+#navbar ul li a.current{
+    text-decoration: underline;
+}
+
+#navbar ul li a.current:hover{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+#navbar img{
+    margin: 0;
+    padding:0;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#showcase{
+    background:url(/img/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+
+    text-align: center;
+    padding: 150px 20px;
+}
+
+#showcase h1{
+    padding:40px 0;
+    font-weight: 500;
+}
+
+#showcase p,
+#showcase .thinner{
+    font-weight: 100;
+}
+
+#showcase a{
+    text-transform: uppercase;
+}
+
+#caracteristicas{
+    padding: 50px 0;
+}
+
+#caracteristicas h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#caracteristicas .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax( 100px, auto);
+    grid-gap:1rem;
+}
+
+
+#caracteristicas .box{
+    text-align: center;
+}
+
+#caracteristicas .box-1{
+    background:url(img/Platos-desde-arriba/1.jpg); 
+}
+
+#caracteristicas .box-2{
+    background:url(img/Platos-desde-arriba/2.jpg); 
+}
+
+#caracteristicas .box-3{
+    background:url(img/Platos-desde-arriba/3.jpg); 
+}
+
+#caracteristicas .box-4{
+    background:url(img/Platos-desde-arriba/5.jpg); 
+}
+
+#caracteristicas .box-5{
+    background:url(img/Platos-desde-arriba/4.jpg); 
+}
+
+#caracteristicas .box-6{
+    background:url(img/Platos-desde-arriba/6.jpg); 
+}
+
+#caracteristicas .box-7{
+    background:url(img/Platos-desde-arriba/7.jpg); 
+} 
+
+
+#caracteristicas .box-8{
+    background:url(img/Platos-desde-arriba/8.jpg); 
+}
+
+#caracteristicas .box-1,
+#caracteristicas .box-2,
+#caracteristicas .box-3,
+#caracteristicas .box-4,
+#caracteristicas .box-5, 
+#caracteristicas .box-6,
+#caracteristicas .box-7,
+#caracteristicas .box-8 {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 250px;
+    /* border-radius: 20px; */
+}
+
+#caracteristicas .box-1 img,
+#caracteristicas .box-2 img,
+#caracteristicas .box-3 img,
+#caracteristicas .box-4 img,
+#caracteristicas .box-5 img,
+#caracteristicas .box-6 img,
+#caracteristicas .box-7 img,
+#caracteristicas .box-8 img{
+    width: 100%;
+}
+
+
+#caracteristicas .box-1 p,
+#caracteristicas .box-2 p,
+#caracteristicas .box-3 p,
+#caracteristicas .box-4 p,
+#caracteristicas .box-5 p, 
+#caracteristicas .box-6 p,
+#caracteristicas .box-7 p,
+#caracteristicas .box-8 p{
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#caracteristicas .box-1 a,
+#caracteristicas .box-2 a,
+#caracteristicas .box-3 a,
+#caracteristicas .box-4 a,
+#caracteristicas .box-5 a, 
+#caracteristicas .box-6 a,
+#caracteristicas .box-7 a,
+#caracteristicas .box-8 a{
+    font-size: 13px;
+    margin-top: 145px;
+}
+
+
+#caracteristicas h2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#caracteristicas .box{
+    text-align: center;
+}
+
+
+
+/* FOOD */
+
+#food{
+    padding-top: 60px 0;
+
+}
+
+#food h2{
+    text-align: left !important;
+    
+}
+
+#food a{
+    padding-top: 20px;
+}
+
+#food .food-description{
+    float: left;
+    width: 50%;
+    padding: 90px 60px 40px 0;
+}
+
+#food .food-image{
+    float: right;
+    width: 40%;
+}
+
+#food .food-image img{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 110%;
+}
+
+
+#about{
+    padding-bottom: 90px;
+}
+
+#about h2{
+    padding:50px 0;
+}
+
+#about .about-image{
+    float: left;
+    width: 35% ;
+    height: 350px;
+}
+
+#about .about-image img{
+    width: 100%;
+    height: 90%;
+}
+
+#about .about-text{
+    float: right;
+    width: 65%;
+    padding: 0 50px ;
+ }
+
+#mainfooter{
+    text-align: center;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}
